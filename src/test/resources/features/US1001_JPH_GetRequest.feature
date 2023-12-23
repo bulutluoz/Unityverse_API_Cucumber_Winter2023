@@ -1,6 +1,6 @@
 Feature: US1001 Kullanici JPH get request sonuclarini test eder
 
-  @wip
+
   Scenario: TC01 yapilan GET request sonucunda response degerleri beklenen degerlere esit olmali
 
     Given Kullanici "jPHBaseUrl" base URL'ini kullanir
