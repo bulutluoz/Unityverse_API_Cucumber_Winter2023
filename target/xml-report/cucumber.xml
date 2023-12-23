@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.09" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanici JPH get request sonuclarini test eder" name="TC01 yapilan GET request sonucunda response degerleri beklenen degerlere esit olmali" time="1.018">
+<system-out><![CDATA[
+Given Kullanici "jPHBaseUrl" base URL'ini kullanir..........................passed
+Then Path parametreleri icin "posts/44" kullanir............................passed
+And jPH server a GET request gonderir ve testleri yapmak icin response degerini kaydeder.passed
+Then jPH response'da status degerinin 200...................................passed
+And jPH response'da content type degerinin "application/json; charset=utf-8".passed
+And jPH responseBody'sindeki attributeleri test etmek icin response i JsonPath objesine cast eder.passed
+Then jPH GET response body'sinde "userId" degerinin Integer 5...............passed
+And jPH GET response body'sinde "title" degerinin String "optio dolor molestias sit".passed
+]]></system-out>
+</testcase>
+</testsuite>
